@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Taller3</string>
+    <string name="btnRegister">REGISTRAR INFRACCIÓN</string>
+    <string name="btnCarList">LISTA DE INFRACCIONES</string>
+    <string name="btnExit">SALIR</string>
+    <string name="tvPlate">PLACA:</string>
+    <string name="tvBrand">MARCA:</string>
+    <string name="tvModel">MODELO:</string>
+    <string name="tvDescription">DESCRIPCIÓN DE LA INFRACCIÓN:</string>
+    <string name="tvAddress">DIRECCIÓN DE LA INFRACCIÓN:</string>
+    <string name="btnRegister2">REGISTRAR</string>
+    <string name="tvPlateFormat">*Formato: ABC123</string>
+    <string name="tvTitle2">EDITAR INFRACCIÓN</string>
+    <string name="btnBack">VOLVER</string>
+    <string name="btnUpdate">ACTUALIZAR</string>
+    <string name="btnDelete">BORRAR INFRACCIÓN</string>
+    <string name="tvFilter">Filtro</string>
+    <string name="btnFilter">FILTRAR</string>
+    <string name="tvDescription2">DESCRIPCIÓN:</string>
+    <string name="tvDirection2" >DIRECCIÓN:</string>
+</resources>
