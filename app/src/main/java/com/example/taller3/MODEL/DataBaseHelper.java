@@ -92,6 +92,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         String brand = CarsListActivity.brandFilter;
         String query = "";
 
+
         if(plate.equals("Placa") && brand.equals("Marca")){
             query = "SELECT ID AS _id,  "+ CAR_LICENSE_PLATE_COL + ", " + CAR_BRAND_COL +
                     ", " + CAR_MODEL_COL + ", " + INFRACTION_DESCRIPTION_COL + ", " +
@@ -101,7 +102,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
             query = "SELECT ID AS _id,  "+ CAR_LICENSE_PLATE_COL + ", " + CAR_BRAND_COL +
                     ", " + CAR_MODEL_COL + ", " + INFRACTION_DESCRIPTION_COL + ", " +
                     INFRACTION_ADDRESS_COL + " FROM " + INFRACTION_TABLE + " WHERE " +
-                    CAR_LICENSE_PLATE_COL + " LIKE '" + plate + "'";
+                    CAR_LICENSE_PLATE_COL + " LIKE '%" + plate + "%'";
         }
         else if(plate.equals("Placa") && !brand.equals("Marca")){
             query = "SELECT ID AS _id,  "+ CAR_LICENSE_PLATE_COL + ", " + CAR_BRAND_COL +
@@ -112,7 +113,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
             query = "SELECT ID AS _id,  "+ CAR_LICENSE_PLATE_COL + ", " + CAR_BRAND_COL +
                     ", " + CAR_MODEL_COL + ", " + INFRACTION_DESCRIPTION_COL + ", " +
                     INFRACTION_ADDRESS_COL + " FROM " + INFRACTION_TABLE + " WHERE " +
-                    CAR_LICENSE_PLATE_COL + " LIKE '" + plate + "' AND " + CAR_BRAND_COL + " LIKE '" + brand + "'";
+                    CAR_LICENSE_PLATE_COL + " LIKE '%" + plate + "%' AND " + CAR_BRAND_COL + " LIKE '" + brand + "'";
         }
 
         Cursor cursor = db.rawQuery(query,null);
